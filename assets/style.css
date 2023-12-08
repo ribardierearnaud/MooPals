@@ -179,7 +179,7 @@ li.active {
 
 .btn {
     text-decoration: none;
-    padding: 1.4em;
+    padding: 0.8em;
     font-size: 1.2em;
     color: #FFFFFF;
     background-color: #000000;
@@ -188,7 +188,6 @@ li.active {
     
     
 .btn:hover {
-    padding: 1.4em;
     color: #231F13;
     background-color: #EBC392;
 } 
@@ -724,6 +723,25 @@ footer {
     transform:scale(1);
     
   }
+}
+
+/* MtPelerin style */
+
+.ramp-widget {
+    width: 350px;
+    height: 525px;
+}
+
+@media (min-width: 768px) {
+    .ramp-widget {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .ramp-widget {
+        width: 500px;
+    }
 }
 
 
