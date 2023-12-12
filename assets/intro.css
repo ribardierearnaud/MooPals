@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Moo+Lah+Lah&display=swap");
 body {
-  background: #EBC392;
+  background: #FDFCE8;
   color: #FFF;
   margin: auto;
   font-family: "Comfortaa", sans-serif;
@@ -171,6 +171,25 @@ b {
 .blobs .blob:nth-of-type(6n-2) {
   height: 3vh;
   animation: drip_three 4s infinite;
+}
+
+.skip-button {
+  padding: 10px 20px;
+  background-color: #EBC392;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.skip-button:hover {
+  background-color: #231F13;
+  color: #FFF;
 }
 
 @keyframes drip_one {

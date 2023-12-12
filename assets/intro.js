@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Récupérer l'élément audio
   var mooSound = document.getElementById('mooSound');
-  
+
+  // Récupérer le bouton de skip
+  var skipButton = document.querySelector('.skip-button');
+
   // Fonction pour jouer le bruit de vache
   function playMooSound() {
     // Vérifier si l'audio est pris en charge et prêt à être joué
@@ -13,14 +16,26 @@ document.addEventListener('DOMContentLoaded', function () {
       mooSound.currentTime = 0;
       mooSound.play();
 
-      // Delay the redirection by 3 seconds
+      // Retarder la redirection de 3 secondes après le son
       setTimeout(function () {
-        // Perform the redirection after the delay
+        // Effectuer la redirection après le délai
         window.location.href = "home.html";
-      }, 3000);
-
+      }, 2000);
     }
   }
 
+  // Fonction pour passer l'introduction
+  function skipIntro() {
+    // Effectuer la redirection immédiatement
+    window.location.href = "home.html";
+  }
+
+  // Ajouter l'événement de clic pour le bouton de skip
+  skipButton.addEventListener('click', skipIntro);
+
+  // Automatiquement déclencher la fonction skip après 12 secondes
+  setTimeout(skipIntro, 8000);
+
+  // Ajouter l'événement de clic pour le lien
   link.addEventListener('click', playMooSound);
 });

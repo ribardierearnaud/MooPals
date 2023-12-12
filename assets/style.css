@@ -193,7 +193,7 @@ li.active {
 } 
 
 /* Home section styles */
-#home, #brand, #collectibles, #faq-section {
+#home, #brand, #collectibles, #faq-section, #onboard {
     padding: 40px;
     text-align: center;
     background-color: #FDFCE8;
@@ -253,6 +253,11 @@ h2 {
 
 .left-content {
     width: 50%;
+}
+
+.right-content {
+    text-align: center;
+    margin: auto;
 }
 
 .content-image-left img {
@@ -326,6 +331,10 @@ h2 {
 .nft-card-text span {
     font-weight:bolder;
     color: #231F13;
+}
+
+.disclaimer {
+    font-size: 13px;
 }
 
 .base-explanations, .special-explanations {
@@ -440,6 +449,39 @@ h2 {
 .gallery img {
     width: 100%;
     border-radius: 7%;
+}
+
+/* Discord warning */
+.discord-icon {
+    cursor: pointer;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.quest-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#discord-modal {
+    text-align: center;
 }
 
 /* Footer styles */
@@ -727,9 +769,13 @@ footer {
 
 /* MtPelerin style */
 
+.mtpelerin-iframe {
+    overflow-y: hidden; 
+}
+
 .ramp-widget {
     width: 350px;
-    height: 525px;
+    height: 530px;
 }
 
 @media (min-width: 768px) {
@@ -958,7 +1004,7 @@ footer {
         font-size: 2.5rem;
     }
 
-    #home, #brand, #collectibles, #faq-section {
+    #home, #brand, #collectibles, #faq-section, #onboard {
         padding: 40px 25px;
     }
 
