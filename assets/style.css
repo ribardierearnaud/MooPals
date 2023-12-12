@@ -373,7 +373,7 @@ h2 {
 .special-explanations li {
     list-style-type: none;
     margin: 3px;
-    max-width: 23%;
+    max-width: 18%;
 }
 
 
@@ -1017,6 +1017,6 @@ footer {
     }
 
     .special-explanations li {
-        max-width: 40%;
+        max-width: 30%;
     }
 }
